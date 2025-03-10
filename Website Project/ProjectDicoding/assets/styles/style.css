@@ -1,0 +1,222 @@
+body {
+    font-family: Roboto;
+    color: rgb(141, 138, 138);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+*{
+    box-sizing: border-box;   
+   }
+
+aside {
+    flex: 1;
+}
+
+p {
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Lebar penuh untuk container */
+    height: 25%; /* Tinggi penuh untuk container */
+}
+
+.profile-picture {
+    align-items: center;
+    width: 200px; /* Sesuaikan ukuran */
+    height: 200px; /* Sesuaikan ukuran */
+    border-radius: 50%; /* Membuat lingkaran */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terpotong */
+    border: 2px solid #ccc; /* Opsional: menambahkan border */
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color:black;
+}
+
+header {
+    display: inline;
+}
+
+.heading-utama {
+    font-size: 20px;
+    padding: 60px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.9));
+    color: rgb(141, 138, 138);
+    text-align: Center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    color: black;
+    background-color: darkgray;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.card label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card input,
+.card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card textarea {
+    resize: none;
+    height: 100px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: beige;
+    color: darkgrey;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 100%; /* Lebar garis */
+    height: 4px; /* Ketebalan garis */
+    background: linear-gradient(to right, black, #ffffff); /* Gradien warna */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.footer-text span {
+    color: red;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+            align-self: center;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+      main aside {
+        align-self: stretch;
+    }
+}
