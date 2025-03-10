@@ -1,0 +1,106 @@
+/* Styling umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4a7efc;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  main {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  h2 {
+    color: #4a7efc;
+    border-bottom: 2px solid #4a7efc;
+    padding-bottom: 5px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  form div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="number"], button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-left: 10px;
+  }
+  
+  button {
+    background-color: #4a7efc;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #3a6be0;
+  }
+  
+  /* Buku List Styling */
+  #incompleteBookList, #completeBookList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  [data-testid="bookItem"] {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+  
+  [data-testid="bookItem"] h3 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  [data-testid="bookItem"] p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  [data-testid="bookItem"] button {
+    margin-right: 5px;
+  }
+  
